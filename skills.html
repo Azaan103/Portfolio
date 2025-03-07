@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Azaan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset all margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set default font and background */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: rgba(34, 33, 38, 255);
+            color: #fff;
+        }
+
+        /* Header styling */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            background-color: rgba(28, 29, 32, 255);
+        }
+
+        /* Navigation styling */
+        .header nav ul {
+            display: flex;
+            gap: 80px;
+            list-style: none;
+            margin-right: 20px;
+        }
+
+        .header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        /* Name styling */
+        #name {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        /* Main content container */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 0px;
+            padding: 20px;
+            background-color: rgba(16, 16, 30, 0.807);
+        }
+
+        /* Middle section for skills information */
+        .middle-section {
+            flex: 1;
+            margin: 0 20px;
+            background-color: rgba(36, 34, 46, 0.902);
+            border: 1px solid #2f2c36;
+            padding: 20px;
+        }
+
+        /* Right column for boxes */
+        .right-column {
+            width: 400px;
+        }
+
+        /* Shared styles for boxes */
+        .rightbox {
+            width: 100%;
+            height: 500px;
+            background-color: #1c1d20;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            border: 1px solid #1f1e22;
+            margin-bottom: 3px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .rightbox:hover {
+            background-color: #ffffff;
+            color: #1c1d20;
+            scale: 1.05;
+            transition: 0.5s;
+            font-weight: bolder;
+        }
+
+        /* Specific styles for rightbox2 */
+        .rightbox2 {
+            justify-content: left;
+            font-size: 20px;
+            padding-left: 20px;
+        }
+
+        /* Skills section */
+        .skill-section {
+            margin-bottom: 20px;
+            background-color: #1c1d20;
+            border: 1px solid #2f2c36;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.5s ease;
+        }
+
+        .skill-section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(250, 250, 250, 0.5);
+        }
+
+        .skill-header {
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #2f2c36;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .skill-header .logo {
+            color: #e9bf97;
+            font-size: 24px;
+        }
+
+        .skill-content {
+            padding: 0 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        .skill-section:hover .skill-content {
+            max-height: 200px;
+            /* Adjust based on content */
+        }
+
+        .skill-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .header nav ul {
+                gap: 25px;
+                margin-right: 10px;
+            }
+
+            .header nav ul li a {
+                font-size: 14px;
+            }
+
+            #name {
+                font-size: 20px;
+            }
+
+            .main-content {
+                flex-direction: column;
+            }
+
+            .middle-section,
+            .right-column {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .rightbox {
+                height: auto;
+                min-height: 300px;
+                font-size: 24px;
+            }
+
+            .skill-section {
+                margin-bottom: 15px;
+            }
+
+            .skill-header {
+                font-size: 18px;
+            }
+
+            .skill-content p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <span id="name">Azaan</span>
+            <nav>
+                <ul>
+                    <li><a href="portfolio.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <!-- Middle Section for Skills Information -->
+        <div class="middle-section">
+            <!-- Skill Section Example -->
+            <div class="skill-section">
+                <div class="skill-header">
+                    <span>Social Media Marketing</span>
+                    <span class="logo">💻</span>
+                </div>
+                <div class="skill-content">
+                    <p>
+                        I specialize in creating and managing social media campaigns across platforms like Instagram,
+                        Facebook, and LinkedIn. My expertise includes content creation, audience engagement, and
+                        performance analytics.
+                    </p>
+                </div>
+            </div>
+            <!-- Photoshop -->
+            <div class="skill-section">
+                <div class="skill-header">
+                    <span>Adobe Photoshop</span>
+                    <span class="logo">🖼️</span>
+                </div>
+                <div class="skill-content">
+                    <p>
+                        Proficient in photo editing, creating social media graphics, and designing banners. Experienced
+                        in using layers, masks, and filters to create visually appealing designs.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Illustrator -->
+            <div class="skill-section">
+                <div class="skill-header">
+                    <span>Adobe Illustrator</span>
+                    <span class="logo">✏️</span>
+                </div>
+                <div class="skill-content">
+                    <p>
+                        Skilled in creating vector graphics, logos, and illustrations. Experienced in using the pen
+                        tool, shapes, and typography to design scalable graphics.
+                    </p>
+                </div>
+            </div>
+            <!-- Duplicate this section for more skills -->
+        </div>
+
+        <!-- Right Column for Boxes -->
+        <div class="right-column">
+            <div class="rightbox rightbox1">
+                <p><span id="logobox1">&#10008;</span><br>Turning <u><strong>"Clicks"</strong></u> <br>into
+                    <u><strong>"Customers"</strong></u>
+                </p>
+            </div>
+            <div class="rightbox rightbox2">
+                <p><span id="logobox1">&#8609;</span><br>&#10077; A BSCS student and a social media marketer. Pursuing
+                    my degree in computer science while helping brands grow through digital marketing. Combining tech
+                    and creativity to drive results! &#10078;<br><span id="logobox1">&#8607;</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
